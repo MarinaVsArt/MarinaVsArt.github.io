@@ -1,0 +1,37 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+body{
+    background-color: black;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color:white
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#navlogo{
+    height: 120px;
+    transition: 0.1s;
+}
+
+#navlogo:hover{
+    filter: grayscale(100%) brightness(40%) sepia(100%) hue-rotate(-10deg) saturate(800%) contrast(0.8);
+    height: 130px;
+}
+
+.film-cont{
+    background-image: url("../images/films/catarsis1.png");
+    background-position: center;
+    background-size: cover;
+    height: 40vw;
+    box-shadow: 0 0 50px 50px black inset;
+}

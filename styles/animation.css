@@ -1,0 +1,101 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+body{
+    background-image: url("../images/backgrounds/sky.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    color:white;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+
+#navlogo{
+    height: 120px;
+    transition: 0.1s;
+}
+
+#navlogo:hover{
+    filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-250deg) saturate(800%) contrast(0.8);
+    height: 130px;
+}
+
+#section1{
+    margin-top: 100px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#section1 #icon{
+    width: 80%;
+    height: 90%;
+    transition: 0.5s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#section1 #icon:hover{
+    width: 90%;
+    height: 100%;
+}
+
+
+#section1 img{
+    border-radius: 80px;
+    height: 20vh;
+    width: 20vh;
+}
+
+#section1 a{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#contVideo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+  
+video{
+    width: 50%;
+}
+
+@media (max-width:800px){
+    #section1{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    #section1 iframe{
+        display: none;
+    }
+    #section1 a{
+        display: flex;
+    }
+    video{
+        width: 80%;
+      }
+}
